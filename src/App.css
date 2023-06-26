@@ -1,0 +1,30 @@
+.App {
+  background-color: black;
+  text-align: center;
+}
+
+
+.button_shadow {
+  /* box-shadow: rgb(255, 255, 255) 28px 8px 0px -3px; */
+}
+
+.button_shadow:hover {
+  position: relative;
+  animation-name: down;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  /* box-shadow: #FF8000 5px 5px 0px -3px; */
+}
+
+.button_background {}
+
+@keyframes down {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  100% {
+    transform: translate(28px, 4px);
+  }
+
+}
